@@ -1,1 +1,1 @@
-module.exports = './src/Rules.coffee'
+module.exports = require './src/Rules.coffee'
