@@ -1,0 +1,34 @@
+{
+  "name": "rules",
+  "version": "0.1.0",
+  "description": "Common rules checker",
+  "main": "main.coffee",
+  "scripts": {
+    "pretest": "node_modules/.bin/coffeelint -f coffeelint.json src",
+    "test": "mocha test --recursive -R progress --compilers coffee:coffee-script/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/s2way/Rules.git"
+  },
+  "keywords": [
+    "rules",
+    "checker"
+  ],
+  "author": "Newborns/S2Way",
+  "bugs": {
+    "url": "https://github.com/s2way/Rules/issues"
+  },
+  "homepage": "https://github.com/s2way/Rules",
+  "dependencies": {
+    "moment": "^2.14.1",
+    "underscore": "^1.8.3",
+    "exception": "git://github.com/s2way/Exception.git"
+  },
+  "devDependencies": {
+    "coffee-script": "latest",
+    "coffeelint": "^1.9.4",
+    "expect.js": "^0.3.1",
+    "mocha": "^2.2.4"
+  }
+}
